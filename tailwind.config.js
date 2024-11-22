@@ -14,6 +14,7 @@ module.exports = {
           200: "blue",
         },
       },
+      fontFamily: {},
     },
   },
   plugins: [],

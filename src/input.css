@@ -1,3 +1,16 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply mt-6 bg-white overflow-hidden rounded-md shadow-xl relative
+}
+
+.badge{
+    @apply bg-gray-400 text-gray-100 rounded-full p-1 text-xs hover:bg-gray-500/80 duration-500
+}
+
+.btn {
+    @apply p-1 rounded-md shadow-sm my-1 cursor-pointer
+}

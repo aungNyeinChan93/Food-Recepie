@@ -7,58 +7,91 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="text-gray-400">
-    <div> <!-- wrapper start-->
-        <div>
+<body class="text-gray-400 font-sans">
+    <div class="grid md:grid-cols-4"> <!-- wrapper start-->
+        <div class="md:col-span-1">
             <nav>
                 <div>
-                    <h1 class="font-bold uppercase p-3 text-header">
-                        <a href="/">Food By Chan</a>
+                    <h1 class="font-bold uppercase p-3 text-lg lg:text-header my-2 text-center">
+                        <a href="#">Food By Chan</a>
                     </h1>
                 </div>
-                <ul>
+                <ul class="flex justify-around md:flex-col md:items-start md:ml-1">
                     <li class="text-gray-700 font-bold">
                         <a href="#">
-                            <span>Home</span>
+                            <span
+                                class=" hover:text-gray-200 hover:border-b-2 hover:md:border-b-0 hover:md:border-l-2  border-red-500 duration-75">Home</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>About</span>
+                            <span
+                                class=" hover:text-gray-200 hover:border-b-2 hover:md:border-b-0 hover:md:border-l-2 border-red-500 duration-75">About</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span>Contact</span>
+                            <span
+                                class=" hover:text-gray-200 hover:border-b-2 hover:md:border-b-0 hover:md:border-l-2 border-red-500 duration-75">Contact</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <main class="py-16 px-16">
-            <div>
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
+        <main class="py-8 px-16 bg-gray-100 md:col-span-3">
+            <div class="text-red-400 flex justify-center md:justify-end">
+                <a href="#" class="btn hover:bg-gray-200 duration-300 ">Log in</a>
+                <a class="ml-2 btn  hover:bg-gray-200 duration-300" href="#">Sign up</a>
             </div>
 
             <header class="my-6">
-                <h2 class="text-gray-700 text-6xl py-2">Recipes</h2>
-                <h3 class="text-2xl">For Ninjas</h3>
+                <h2 class="text-gray-700 text-2xl md:text-6xl py-2">Recipes</h2>
+                <h3 class="text-2xl"> Avaliable Menu</h3>
             </header>
 
             <div>
                 <h4 class="font-bold border-l-2 border-secondary-100/70">Latest Recipes</h4>
 
-                <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                     <!-- cards go here -->
-                    <div class="mt-6">
-                        <img src="img/stew.jpg" alt="stew">
-                        <div>
-                            <span>5 Bean Chili Stew</span>
-                            <span>Recipe by Mario</span>
+                    <div class="card">
+                        <img src="img/stew.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chili Stew</span>
+                            <span class="block text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="absolute top-1 left-1">
+                            <span class="badge">25
+                                mins
+                            </span>
                         </div>
                     </div>
+                    <div class="card">
+                        <img src="img/noodles.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Noodles</span>
+                            <span class="block text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="absolute top-1 left-1">
+                            <span class="badge">35
+                                mins
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/curry.jpg" alt="stew" class="w-full h-32 md:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Curry</span>
+                            <span class="block text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="absolute top-1 left-1">
+                            <span class="badge">10
+                                mins
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
 
                 <h4 class="font-bold mt-6 border-l-2 border-primary/70">Most Popular</h4>
@@ -68,8 +101,8 @@
                 </div>
             </div>
 
-            <div>
-                <div>Load more</div>
+            <div class="flex justify-center">
+                <div class="bg-gray-300 p-1 rounded text-red-400 hover:text-red-600 duration-1000">Load more</div>
             </div>
         </main>
     </div>
